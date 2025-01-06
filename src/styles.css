@@ -60,3 +60,34 @@
         width: auto;
     }
 }
+@media (max-width: 480px) {
+    .main-container {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        width: auto;
+        height: auto;
+    }
+
+    .charts-grid {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .line-chart{
+        height: auto; 
+        padding: 10px;}
+        .bar-chart{
+            height: 100%; 
+            padding: 10px;}
+          
+
+    } 
+    
+

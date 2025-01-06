@@ -45,23 +45,10 @@ const LineChart = () => {
   const options = {
     responsive: true,
     plugins: {
-      title: {
-        display: true,
-        text: "Invoices",
-        font: {
-          size: 18,
-          weight: "bold",
-        },
-        padding: {
-          bottom: 20,
-        },
-      },
       tooltip: {
         backgroundColor: "rgba(0, 0, 0, 0.7)",
         titleColor: "#fff",
         bodyColor: "#fff",
-        footerColor: "#fff",
-        footerFont: { weight: "bold" },
       },
     },
     scales: {
@@ -69,26 +56,12 @@ const LineChart = () => {
         title: {
           display: true,
           text: "Days of the Week",
-          font: {
-            size: 14,
-            weight: "bold",
-          },
-        },
-        grid: {
-          color: "rgba(200, 200, 200, 0.5)",
         },
       },
       y: {
         title: {
           display: true,
           text: "Sales",
-          font: {
-            size: 14,
-            weight: "bold",
-          },
-        },
-        grid: {
-          color: "rgba(200, 200, 200, 0.5)",
         },
         ticks: {
           beginAtZero: true,
@@ -96,17 +69,13 @@ const LineChart = () => {
         },
       },
     },
-    legend: {
-      position: "top",
-      labels: {
-        font: {
-          size: 14,
-        },
-      },
-    },
   };
 
-  return <Line data={data} options={options} />;
+  return (
+    <div style={{ width: "100%", maxWidth: "600px", margin: "0 auto", paddingTop: "30px" }}>
+      <Line data={data} options={options} />
+    </div>
+  );
 };
 
 export default LineChart;
