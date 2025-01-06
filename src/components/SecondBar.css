@@ -1,0 +1,56 @@
+.bar {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f0f0f0;
+  padding: 10px;
+  gap: 8px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.bar-item {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  width: 128px;
+  justify-content: center;
+  height: 70px;
+}
+
+.bar-item:hover {
+  background-color: #c5c5f9;
+  transform: scale(1.05);
+}
+
+.bar-item.dashboard {
+  background: linear-gradient(45deg, #00c6ff, #1e73da); 
+box-shadow: 0 0 15px rgba(0, 198, 255, 0.8), 0 0 25px rgba(0, 198, 255, 0.6); 
+ color: white;
+  border: none;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+
+}
+
+.label {
+  font-size: 14px;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .bar-item {
+    flex: 1 1 100px;
+  }
+
+  .label {
+    font-size: 12px;
+  }
+}
