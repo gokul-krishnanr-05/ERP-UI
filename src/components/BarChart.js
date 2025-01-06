@@ -19,20 +19,20 @@ const BarChart = () => {
       {
         label: "Sales Forecast (This Week)",
         data: [50000, 55000, 60000, 62000, 58000, 59000, 61000],
-        backgroundColor: "rgba(54, 162, 235, 0.7)", // Blue color for this week
+        backgroundColor: "rgba(54, 162, 235, 0.7)", 
         borderColor: "rgba(54, 162, 235, 1)",
         borderWidth: 1,
-        barThickness: 10, // Thin bars
-        barPercentage: 0.5, // Adjust bar width relative to space
+        barThickness: 10, 
+        barPercentage: 0.5, 
       },
       {
         label: "Sales Forecast (Last Week)",
         data: [45000, 47000, 50000, 55000, 52000, 53000, 54000],
-        backgroundColor: "rgba(255, 99, 132, 0.7)", // Red color for last week
+        backgroundColor: "rgba(255, 99, 132, 0.7)",
         borderColor: "rgba(255, 99, 132, 1)",
         borderWidth: 1,
-        barThickness: 10, // Thin bars
-        barPercentage: 0.5, // Adjust bar width relative to space
+        barThickness: 10, 
+        barPercentage: 0.5,
       },
     ],
   };
@@ -42,7 +42,7 @@ const BarChart = () => {
     plugins: {
       title: {
         display: true,
-        text: "Sales Forecast", // Heading
+        text: "Sales Forecast",
         font: {
           size: 20,
           weight: "bold",
@@ -63,7 +63,7 @@ const BarChart = () => {
       x: {
         title: {
           display: true,
-          text: "Days of the Week", // X-axis label
+          text: "Days of the Week",
           font: {
             size: 14,
             weight: "bold",
@@ -76,7 +76,7 @@ const BarChart = () => {
       y: {
         title: {
           display: true,
-          text: "Sales (in USD)", // Y-axis label
+          text: "Sales (in USD)",
           font: {
             size: 14,
             weight: "bold",

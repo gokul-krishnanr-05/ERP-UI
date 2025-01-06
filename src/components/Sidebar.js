@@ -20,7 +20,7 @@ const Sidebar = () => {
       <div className="sidebar">
         <div className="sidebar-header">
           <img
-            src="https://cdn1.iconfinder.com/data/icons/social-messaging-ui-color-shapes/128/analytics-circle-blue-1024.png" // Replace with your logo URL
+            src="https://cdn1.iconfinder.com/data/icons/social-messaging-ui-color-shapes/128/analytics-circle-blue-1024.png"
             alt="Logo"
             className="sidebar-logo"
           />
